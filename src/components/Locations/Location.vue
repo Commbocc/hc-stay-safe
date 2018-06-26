@@ -2,7 +2,7 @@
   <tr>
     <td class="mapColumn">
       <a v-if="location.address" :href="`https://google.com/maps/search/${location.address}`" target="_blank" class="hide-external-indicator" :title="location.address">
-        <span class="fa fa-fw fa-map-marker" aria-label="View Map"></span>
+        <span class="fa fa-fw fa-map-marker-alt" aria-label="View Map"></span>
       </a>
     </td>
     <td>
