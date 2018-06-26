@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="card card-body text-center mb-5">
+  <div class="card card-body text-center">
     <a href="https://member.everbridge.net/index/1332612387832180?#/login" target="_blank" class="hide-external-indicator">
       <img src="https://hillsboroughcounty.org/library/hillsborough/promotions/hcflalerttight.png" alt="HCFL Alert Hillsborough County" class="img-fluid mb-3">
     </a>
