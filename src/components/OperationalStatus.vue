@@ -1,70 +1,73 @@
 <template lang="html">
-  <div class="card mb-3 mb-md-5">
+  <div v-if="instances.length" class="list-group list-group-flush text-center mt-4">
 
-    <div class="card-header text-center" :class="headerClass">
-      <strong>{{ title }}</strong>
+    <div class="list-group-item py-2 d-flex justify-content-center align-items-center">
+      <div class="px-3 w-50 text-right">
+        Active Storm(s)
+      </div>
+      <strong class="px-3 w-50 text-left font-weight-bold">
+        {{ current.storms }}
+      </strong>
     </div>
 
-    <table class="table table-striped mb-0">
-      <caption class="sr-only">
-        <p>
-          The current active storms are: {{ storms }}
-        </p>
-        <p>
-          The current evacuation levels are: {{ evacLevels }}
-        </p>
-        <p>
-          The current EOC status is: {{ eocStatus }}
-        </p>
-      </caption>
-      <tbody aria-hidden="true">
-        <tr>
-          <th class="text-right">Active Storm(s)</th>
-          <td>
-            {{ storms }}
-          </td>
-        </tr>
-        <tr>
-          <th class="text-right">Evacuation Level(s)</th>
-          <td>
-            {{ evacLevels }}
-          </td>
-        </tr>
-        <tr>
-          <th class="text-right">EOC Status</th>
-          <td>
-            {{ eocStatus }}
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="list-group-item py-2 d-flex justify-content-center align-items-center">
+      <div class="px-3 w-50 text-right">
+        <!-- evacLink -->
+        <a :href="evacLink" class="text-white hide-external-indicator" target="_blank" :title="evacLabel" :aria-label="evacLabel">
+          <span class="fas fa-info-circle mr-1" aria-hidden="true"></span>
+          Evacuation Level(s)
+        </a>
+      </div>
+      <strong class="px-3 w-50 text-left font-weight-bold">
+        {{ current.evaclevels }}
+      </strong>
+    </div>
+
+    <div class="list-group-item py-2 d-flex justify-content-center align-items-center">
+      <div class="px-3 w-50 text-right">
+        EOC Status
+      </div>
+      <strong class="px-3 w-50 text-left font-weight-bold">
+        {{ current.eocstatus }}
+      </strong>
+    </div>
 
   </div>
 </template>
 
 <script>
+import GoogleSheetModel from 'google-sheet-model'
+
 export default {
   name: 'OperationalStatus',
+  extends: GoogleSheetModel,
   props: {
     title: {
       type: String,
       default: 'Operational Status'
     },
-    headerClass: {
+    evacLabel: {
       type: String,
-      default: 'bg-primary text-white'
+      default: 'Find Evacuation Zone'
     },
-    storms: {
+    evacLink: {
       type: String,
-      default: 'None'
+      default: 'https://maps.hillsboroughcounty.org/HEAT/HEAT.html'
     },
-    evacLevels: {
-      type: String,
-      default: 'None at this time'
+    // google sheet model props
+    sheetId: {
+      default: '14c7p2JUfuRTC9JcbvG--pOu6IRtVuMZ7Flkv0EZ54Io'
     },
-    eocStatus: {
-      type: String,
-      default: 'Monitoring'
+    tableId: {
+      default: 5
+    },
+    fields: {
+      default: () => ['storms', 'evaclevels', 'eocstatus']
+    }
+  },
+  computed: {
+    current () {
+      return this.instances[0]
     }
   }
 }
