@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="stylesheet" href="https://commbocc.github.io/html-wrapper/static/css/app.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
   <title>hc-stay-safe</title>
 </head>
@@ -13,7 +12,8 @@
 
   <main id="hc-main" aria-label="Page Content">
 
-    <nav is="hc-navigation" logo-href="./"></nav>
+    <!-- https://www.w3.org/WAI/GL/2016/WD-WCAG20-TECHS-20160105/G1 -->
+    <nav is="hc-navigation" logo-href="./" skip-content-link="#staySafe"></nav>
 
     <!--  -->
     <div id="staySafe">
@@ -26,17 +26,7 @@
       </div>
 
       <!-- Latest Updates -->
-      <div is="latest-updates">
-        <a href="#" title="Hillsborough County Continues to Offer Sandbags">
-          Today will be the time Hillsborough County feels the most impacts from Subtropical Storm Alberto.
-        </a>
-        <a href="#" title="Hillsborough County Makes Sandbags Available">
-          In preparation for the effects of Subtropical Storm Alberto, Hillsborough County is making sandbags available at three locations.
-        </a>
-        <a href="#" title="Hillsborough County Prepares for More Rain This Weekend">
-          In preparation for the forecast of heavy rainfall this weekend, Hillsborough County residents can find complete information on County services and programs...
-        </a>
-      </div>
+      <div is="latest-updates"></div>
 
       <!-- Aide -->
       <div is="aide"></div>

@@ -1,21 +1,25 @@
 <template lang="html">
-  <div class="list-group list-group-flush text-center mt-4">
+  <div v-if="instances.length" class="list-group list-group-flush text-center mt-4">
 
     <div class="list-group-item py-2 d-flex justify-content-center align-items-center">
       <div class="px-3 w-50 text-right">
         Active Storm(s)
       </div>
       <strong class="px-3 w-50 text-left font-weight-bold">
-        {{ storms }}
+        {{ current.storms }}
       </strong>
     </div>
 
     <div class="list-group-item py-2 d-flex justify-content-center align-items-center">
       <div class="px-3 w-50 text-right">
-        Evacuation Level(s)
+        <!-- evacLink -->
+        <a :href="evacLink" class="text-white hide-external-indicator" target="_blank" :title="evacLabel" :aria-label="evacLabel">
+          <span class="fas fa-info-circle mr-1" aria-hidden="true"></span>
+          Evacuation Level(s)
+        </a>
       </div>
       <strong class="px-3 w-50 text-left font-weight-bold">
-        {{ evacLevels }}
+        {{ current.evaclevels }}
       </strong>
     </div>
 
@@ -24,7 +28,7 @@
         EOC Status
       </div>
       <strong class="px-3 w-50 text-left font-weight-bold">
-        {{ eocStatus }}
+        {{ current.eocstatus }}
       </strong>
     </div>
 
@@ -32,24 +36,38 @@
 </template>
 
 <script>
+import GoogleSheetModel from 'google-sheet-model'
+
 export default {
   name: 'OperationalStatus',
+  extends: GoogleSheetModel,
   props: {
     title: {
       type: String,
       default: 'Operational Status'
     },
-    storms: {
+    evacLabel: {
       type: String,
-      default: 'None'
+      default: 'Find Evacuation Zone'
     },
-    evacLevels: {
+    evacLink: {
       type: String,
-      default: 'None at this time'
+      default: 'https://maps.hillsboroughcounty.org/HEAT/HEAT.html'
     },
-    eocStatus: {
-      type: String,
-      default: 'Monitoring'
+    // google sheet model props
+    sheetId: {
+      default: '14c7p2JUfuRTC9JcbvG--pOu6IRtVuMZ7Flkv0EZ54Io'
+    },
+    tableId: {
+      default: 5
+    },
+    fields: {
+      default: () => ['storms', 'evaclevels', 'eocstatus']
+    }
+  },
+  computed: {
+    current () {
+      return this.instances[0]
     }
   }
 }
