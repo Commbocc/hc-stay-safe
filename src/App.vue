@@ -1,14 +1,28 @@
+<template>
+  <div id="app">
+    <img alt="Vue logo" src="./assets/logo.png">
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  </div>
+</template>
+
 <script>
-import Jumbotron from './components/Jumbotron'
-import LatestUpdates from './components/LatestUpdates'
-import OperationalStatus from './components/OperationalStatus'
-import Aide from './components/Aide'
-import ReportDamage from './components/ReportDamage'
-import Links from './components/Links'
+import HelloWorld from './components/HelloWorld.vue'
 
 export default {
-  components: { Jumbotron, LatestUpdates, OperationalStatus, Aide, ReportDamage, Links }
+  name: 'app',
+  components: {
+    HelloWorld
+  }
 }
 </script>
 
-<style src="./assets/main.scss" lang="scss">
+<style>
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>
