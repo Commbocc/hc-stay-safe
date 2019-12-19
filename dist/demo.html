@@ -4,98 +4,14 @@
 <script src="./HcStaySafe.umd.js"></script>
 
 
-<!--  -->
-
 <div id="app">
-
-  <div class="row">
-    <div class="col-sm-6">
-      <!-- Operational Status -->
-      <div is="OperationalStatus"></div>
-    </div>
-    <div class="col-sm-6">
-      <!-- Latest Updates -->
-      <div is="Links" title="Latest Updates" header="bg-info text-white">
-        <a href="https://www.hillsboroughcounty.org/en/media-center/press-releases/2019/08/29/hurricane-dorian-update-1">
-          Hillsborough County Emergency Operations Center Partially Activated - Aug. 29, 8:19 AM
-        </a>
-        <a href="https://www.hillsboroughcounty.org/en/media-center/press-releases/2019/08/28/hillsborough-county-opens-3-sandbag-sites">
-          Hillsborough County Opens 3 Sandbag Sites - Aug. 28, 5:18 PM
-        </a>
-      </div>
-      <!-- end Latest Updates -->
-    </div>
-  </div>
-
-  <!-- sandbags -->
-  <div is="Locations" title="Sandbag Locations" table-index="1"></div>
-  <!-- end sandbags -->
-
-
-  <div class="row d-lg-flex flex-wrap justify-content-center">
-    <div class="col-md-6">
-      <!-- HcflAlert -->
-      <div is="HcflAlert">
-        <a href="https://www.hillsboroughcounty.org/residents/public-safety/emergency-management/hcfl-alert">HCFL Alert</a> is Hillsborough County’s official mass notification system. It is designed to keep you informed about emergencies and certain non-emergency events in Hillsborough County.
-      </div>
-    </div>
-    <div class="col-md-6">
-      <!-- News and Alerts -->
-      <div is="Links" title="News & Alerts" class="text-center">
-        <a href="/newsroom/news-archive?q=&n=0&o=&h=&df=&dt=&r=4">Emergency Alerts &amp; News</a>
-        <a href="/search?q=Evacuation+2017&n=0&o=&h=&t=press-releases&r=10">Evacuation Notices</a>
-        <a href="#">Closings and Cancellations</a>
-        <a href="http://forecast.weather.gov/product.php?site=NWS&amp;issuedby=TBW&amp;product=HWO" target="_blank">Weather Alerts &amp; Notices</a>
-      </div>
-      <!-- end News and Alerts -->
-    </div>
-    <div class="col-md-6">
-      <!-- Report Damage -->
-      <div is="Links" title="Report Damage">
-        <a href="https://service.hillsboroughcounty.org/311/median-maintenance/" target="_blank" icon="fas fa-tree">Downed Trees or Other Debris</a>
-        <a href="https://service.hillsboroughcounty.org/311/flooding/" target="_blank" icon="fas fa-tint">Flooding or Drainage Issues</a>
-        <a href="https://service.hillsboroughcounty.org/311/roads-sidewalks/" target="_blank" icon="fas fa-road">Road Blockage or Damage</a>
-        <a href="http://flvbeoc.org/" target="_blank" icon="fas fa-building">Damage to a Business</a>
-        <a href="https://service.hillsboroughcounty.org/311/other/" target="_blank" icon="fas fa-info-circle">Other Request</a>
-      </div>
-      <!-- end Report Damage -->
-    </div>
-    <div class="col-md-6">
-      <!-- Weather Updates -->
-      <div is="Links" title="Weather Updates">
-        <a href="http://www.weather.gov/" target="_blank">National Weather Service</a>
-        <a href="http://www.nhc.noaa.gov/" target="_blank">National Hurricane Center</a>
-        <a href="http://radar.weather.gov/radar.php?rid=tbw&amp;product=N0R&amp;overlay=11101111&amp;loop=yes" target="_blank">Local Doppler Radar</a>
-        <a href="http://forecast.weather.gov/MapClick.php?zoneid=FLZ051" target="_blank">Local Weather Forecast</a>
-      </div>
-      <!-- end Weather Updates -->
-    </div>
-    <div class="col-md-6">
-      <!-- Preparedness Information -->
-      <div is="Links" title="Preparedness Information">
-        <a href="/residents/public-safety/emergency-management/hcfl-alert"><strong>Sign up for HCFL Alert</strong></a>
-        <a href="/residents/public-safety/emergency-management/action-folder/register-for-special-needs-disaster-assistance"><strong>Register for Special Needs Disaster Assistance</strong></a>
-        <a href="http://www.tampaelectric.com/residential/stormsandsafety/stormsafety/" target="_blank">Preparedness Tips and Checklist</a>
-        <a href="/residents/public-safety/emergency-management/annual-disaster-planning-guide">Tampa Bay Hurricane Guide</a>
-        <a href="http://www.gohart.org/Pages/maps-emergency-evac.aspx" target="_blank">HART Emergency Information</a>
-        <a href="http://www.gohart.org/Individual%20Route%20Maps/hurricane_brochure.pdf" target="_blank">HART Emergency Evacuation Bus Route Map</a>
-        <a href="https://www.ready.gov/kit?gclid=Cj0KEQjwi_W9BRD_3uio_Jz-p8UBEiQANU80vrCtNffe8d3GDfXUzCqLCsmaz-HVmLVhaXYe17fDHd8aAiab8P8HAQ#" target="_blank">Have a Disaster Supply Kit</a>
-        <a href="https://www.ready.gov/make-a-plan" target="_blank">Have a Plan</a>
-        <a href="/residents/public-safety/emergency-management/find-evacuation-information">Know Your Evacuation Zone</a>
-        <a href="http://www.flash.org/peril_inside.php?id=53" target="_blank">Making and Using Sandbags</a>
-        <a href="/residents/animals-and-pets/pet-ownership/pet-disaster-planning">Protecting Your Pet in a Disaster</a>
-        <a href="http://flvbeoc.org/index.php?action=resources" target="_blank">Prepare Your Business</a>
-        <a href="http://www.tampaelectric.com/residential/outages/outagemap/" target="_blank">TECO Outage Map</a>
-      </div>
-      <!-- end Preparedness Information -->
-    </div>
-  </div>
-
+  <demo></demo>
 </div>
 
-<!--  -->
-
 <script>
-Vue.use(HcStaySafe)
-new Vue().$mount('#app')
+new Vue({
+  components: {
+    demo: HcStaySafe
+  }
+}).$mount('#app')
 </script>

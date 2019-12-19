@@ -6080,7 +6080,7 @@ var store = global[SHARED] || (global[SHARED] = {});
 /***/ "584a":
 /***/ (function(module, exports) {
 
-var core = module.exports = { version: '2.6.9' };
+var core = module.exports = { version: '2.6.11' };
 if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
 
 
@@ -8868,7 +8868,7 @@ module.exports = function (it, tag, stat) {
 /***/ "8378":
 /***/ (function(module, exports) {
 
-var core = module.exports = { version: '2.6.9' };
+var core = module.exports = { version: '2.6.11' };
 if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
 
 
@@ -19027,8 +19027,6 @@ __webpack_require__.r(__webpack_exports__);
 var components_namespaceObject = {};
 __webpack_require__.r(components_namespaceObject);
 __webpack_require__.d(components_namespaceObject, "Locations", function() { return Index; });
-__webpack_require__.d(components_namespaceObject, "HcflAlert", function() { return HcflAlert; });
-__webpack_require__.d(components_namespaceObject, "OperationalStatus", function() { return OperationalStatus; });
 __webpack_require__.d(components_namespaceObject, "Links", function() { return Links_Index; });
 
 // CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/setPublicPath.js
@@ -19080,7 +19078,7 @@ function _defineProperty(obj, key, value) {
 
   return obj;
 }
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"9d303bf2-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Locations/Index.vue?vue&type=template&id=64662396&lang=html&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"383b66de-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Locations/Index.vue?vue&type=template&id=64662396&lang=html&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.locations.length)?_c('div',{staticClass:"card mb-3 mb-md-5"},[_c('div',{staticClass:"card-header px-3 d-flex align-items-center justify-content-between",class:_vm.headerClass},[_c('strong',{staticClass:"font-serif"},[_vm._v("\n      "+_vm._s(_vm.title)+"\n    ")]),(false)?undefined:_vm._e()]),_c('table',{staticClass:"table table-striped mb-0",attrs:{"aria-label":_vm.title}},[_c('caption',{staticClass:"sr-only"},[_vm._t("default")],2),_vm._m(0),_c('tbody',_vm._l((_vm.locations),function(location,i){return _c("Location",{key:i,tag:"tr",attrs:{"location":location}})}),1)])]):_vm._e()}
 var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('thead',[_c('tr',[_c('th',{attrs:{"colspan":"2"}},[_vm._v("Location")]),_c('th',[_vm._v("Status")]),_c('th',[_vm._v("Info")])])])}]
 
@@ -19091,7 +19089,7 @@ var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _
 var GoogleSheetModel_umd_min = __webpack_require__("c156");
 var GoogleSheetModel_umd_min_default = /*#__PURE__*/__webpack_require__.n(GoogleSheetModel_umd_min);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"9d303bf2-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Locations/Location.vue?vue&type=template&id=c9fd6188&scoped=true&lang=html&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"383b66de-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Locations/Location.vue?vue&type=template&id=c9fd6188&scoped=true&lang=html&
 var Locationvue_type_template_id_c9fd6188_scoped_true_lang_html_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('tr',[_c('td',{staticClass:"mapColumn"},[(_vm.location.address)?_c('a',{staticClass:"hide-external-indicator",attrs:{"href":("https://google.com/maps/search/" + (_vm.location.address)),"target":"_blank","title":_vm.location.address}},[_c('span',{staticClass:"fa fa-fw fa-map-marker",attrs:{"aria-label":"View Map"}})]):_vm._e()]),_c('td',[(_vm.location.link)?_c('a',{staticClass:"hide-external-indicator",attrs:{"href":_vm.location.link,"target":"_blank"}},[_vm._v("\n      "+_vm._s(_vm.location.location)+"\n    ")]):[_vm._v("\n      "+_vm._s(_vm.location.location)+"\n    ")]],2),_c('td',[_vm._v(_vm._s(_vm.range))]),_c('td',[_vm._v(_vm._s(_vm.location.info))])])}
 var Locationvue_type_template_id_c9fd6188_scoped_true_lang_html_staticRenderFns = []
 
@@ -19365,167 +19363,7 @@ var Index_component = normalizeComponent(
 )
 
 /* harmony default export */ var Index = (Index_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"9d303bf2-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/HcflAlert.vue?vue&type=template&id=3ddce555&lang=html&
-var HcflAlertvue_type_template_id_3ddce555_lang_html_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"card card-body text-center"},[_vm._m(0),_c('div',{staticClass:"text-muted small"},[_vm._t("default"),_c('a',{staticClass:"hide-external-indicator",attrs:{"href":"https://member.everbridge.net/index/1332612387832180?#/signup","target":"_blank"}},[_vm._v("\n      "+_vm._s(_vm.signUpText)+"\n    ")])],2)])}
-var HcflAlertvue_type_template_id_3ddce555_lang_html_staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('a',{staticClass:"hide-external-indicator",attrs:{"href":"https://member.everbridge.net/index/1332612387832180?#/login","target":"_blank"}},[_c('img',{staticClass:"img-fluid mb-3",attrs:{"src":"https://hillsboroughcounty.org/library/hillsborough/promotions/hcflalerttight.png","alt":"HCFL Alert Hillsborough County"}})])}]
-
-
-// CONCATENATED MODULE: ./src/components/HcflAlert.vue?vue&type=template&id=3ddce555&lang=html&
-
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/HcflAlert.vue?vue&type=script&lang=js&
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ var HcflAlertvue_type_script_lang_js_ = ({
-  name: 'HCFLAlert',
-  props: {
-    signUpText: {
-      type: String,
-      default: 'Sign Up Today!'
-    }
-  }
-});
-// CONCATENATED MODULE: ./src/components/HcflAlert.vue?vue&type=script&lang=js&
- /* harmony default export */ var components_HcflAlertvue_type_script_lang_js_ = (HcflAlertvue_type_script_lang_js_); 
-// CONCATENATED MODULE: ./src/components/HcflAlert.vue
-
-
-
-
-
-/* normalize component */
-
-var HcflAlert_component = normalizeComponent(
-  components_HcflAlertvue_type_script_lang_js_,
-  HcflAlertvue_type_template_id_3ddce555_lang_html_render,
-  HcflAlertvue_type_template_id_3ddce555_lang_html_staticRenderFns,
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* harmony default export */ var HcflAlert = (HcflAlert_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"9d303bf2-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/OperationalStatus.vue?vue&type=template&id=5fdcae1d&lang=html&
-var OperationalStatusvue_type_template_id_5fdcae1d_lang_html_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"card mb-3"},[_vm._m(0),(_vm.instances.length)?_c('div',{staticClass:"list-group list-group-flush rounded-0 mb-0"},[_c('div',{staticClass:"list-group-item rounded-0 py-2 d-flex justify-content-center align-items-center"},[_c('div',{staticClass:"px-3 w-50 text-right"},[_vm._v("\n        Active Storm(s)\n      ")]),_c('strong',{staticClass:"px-3 w-50 text-left font-weight-bold"},[_vm._v("\n        "+_vm._s(_vm.current.storms)+"\n      ")])]),_c('div',{staticClass:"list-group-item rounded-0 py-2 d-flex justify-content-center align-items-center"},[_c('div',{staticClass:"px-3 w-50 text-right"},[_c('a',{staticClass:"text-primary hide-external-indicator",attrs:{"href":_vm.evacLink,"target":"_blank","title":_vm.evacLabel,"aria-label":_vm.evacLabel}},[_c('span',{staticClass:"fas fa-info-circle mr-1",attrs:{"aria-hidden":"true"}}),_vm._v("\n          Evacuation Level(s)\n        ")])]),_c('strong',{staticClass:"px-3 w-50 text-left font-weight-bold"},[_vm._v("\n        "+_vm._s(_vm.current.evaclevels)+"\n      ")])]),_c('div',{staticClass:"list-group-item rounded-0 py-2 d-flex justify-content-center align-items-center"},[_c('div',{staticClass:"px-3 w-50 text-right"},[_vm._v("\n        EOC Status\n      ")]),_c('strong',{staticClass:"px-3 w-50 text-left font-weight-bold"},[_vm._v("\n        "+_vm._s(_vm.current.eocstatus)+"\n      ")])])]):_vm._e()])}
-var OperationalStatusvue_type_template_id_5fdcae1d_lang_html_staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"card-header"},[_c('h4',{staticClass:"cared-title text-center"},[_vm._v("Operational Status")])])}]
-
-
-// CONCATENATED MODULE: ./src/components/OperationalStatus.vue?vue&type=template&id=5fdcae1d&lang=html&
-
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/OperationalStatus.vue?vue&type=script&lang=js&
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ var OperationalStatusvue_type_script_lang_js_ = ({
-  name: 'OperationalStatus',
-  extends: GoogleSheetModel_umd_min_default.a,
-  props: {
-    title: {
-      type: String,
-      default: 'Operational Status'
-    },
-    evacLabel: {
-      type: String,
-      default: 'Find Evacuation Zone'
-    },
-    evacLink: {
-      type: String,
-      default: 'https://maps.hillsboroughcounty.org/HEAT/HEAT.html'
-    },
-    // google sheet model props
-    sheetId: {
-      default: '14c7p2JUfuRTC9JcbvG--pOu6IRtVuMZ7Flkv0EZ54Io'
-    },
-    tableIndex: {
-      default: 5
-    }
-  },
-  computed: {
-    current: function current() {
-      return this.instances[0];
-    }
-  }
-});
-// CONCATENATED MODULE: ./src/components/OperationalStatus.vue?vue&type=script&lang=js&
- /* harmony default export */ var components_OperationalStatusvue_type_script_lang_js_ = (OperationalStatusvue_type_script_lang_js_); 
-// CONCATENATED MODULE: ./src/components/OperationalStatus.vue
-
-
-
-
-
-/* normalize component */
-
-var OperationalStatus_component = normalizeComponent(
-  components_OperationalStatusvue_type_script_lang_js_,
-  OperationalStatusvue_type_template_id_5fdcae1d_lang_html_render,
-  OperationalStatusvue_type_template_id_5fdcae1d_lang_html_staticRenderFns,
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* harmony default export */ var OperationalStatus = (OperationalStatus_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"9d303bf2-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Links/Index.vue?vue&type=template&id=8636ae02&lang=html&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"383b66de-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Links/Index.vue?vue&type=template&id=8636ae02&lang=html&
 var Indexvue_type_template_id_8636ae02_lang_html_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"card mb-3"},[_c('div',{staticClass:"card-header",class:_vm.header},[_c('h4',{staticClass:"card-title text-center",class:_vm.header},[_vm._v("\n      "+_vm._s(_vm.title)+"\n    ")])]),_c('ul',{staticClass:"nav flex-column mb-0"},_vm._l((_vm.links),function(link,i){return _c('li',{key:i,staticClass:"nav-item"},[_c("Link",{tag:"a",staticClass:"nav-link",attrs:{"link":link}}),_c('hr',{staticClass:"m-0"})],1)}),0)])}
 var Indexvue_type_template_id_8636ae02_lang_html_staticRenderFns = []
 
@@ -19639,8 +19477,6 @@ var Links_Index_component = normalizeComponent(
 // CONCATENATED MODULE: ./src/components/index.js
 
 
-
-
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=script&lang=js&
 
 
@@ -19650,7 +19486,7 @@ var Links_Index_component = normalizeComponent(
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 
 /* harmony default export */ var Appvue_type_script_lang_js_ = ({
